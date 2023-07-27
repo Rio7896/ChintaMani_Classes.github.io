@@ -44,6 +44,9 @@
         #check:checked ~.img{
            transform: rotatex(90deg);
         }
+        #check:checked ~ .iframe{
+            display: none;
+        }
     
         .img{
             position: relative;
@@ -88,7 +91,7 @@
             font-family:'Courier New', Courier, monospace;
         }
         .iframe{
-            position: absolute;
+            position: relative;
             left:6px;
         }
        
