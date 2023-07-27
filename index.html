@@ -8,7 +8,7 @@
         .container{
             width:412px;
             height:100vh;
-            background-color: blanchedalmond;
+            background-color: rgb(255, 255, 255);
         }
         *{
             margin:0%;
@@ -21,6 +21,7 @@
         .header  label img{
            position: absolute;
            bottom:60px;
+           cursor: pointer;
         }
         #check{
             display: none;
@@ -33,6 +34,7 @@
             left:-100%;
             top:60px;
             transition: all .4s ease;
+            box-shadow: 0 0 20px black;
         }
         #check:checked ~.menu{
             left:0%;
@@ -40,8 +42,17 @@
         #check:checked ~.img{
            transform: rotatex(90deg);
         }
+    
         .img{
             position: relative;
+            cursor: pointer;
+           
+        }
+        .img:active{
+            background-color:grey;
+            border-radius: 10px;
+            
+
         }
         .label{
             background-color: red;
@@ -52,12 +63,14 @@
             font-size: 30px;
             line-height:50px;
             color:#fff;
+            cursor:pointer;
             letter-spacing: 1px;
 
             font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
         }
         .label:hover{
             background-color: aqua;
+            transition: all .2s ease-in-out;
         }
         .lab1{
            position:absolute;
