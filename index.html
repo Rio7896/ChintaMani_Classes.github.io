@@ -8,7 +8,7 @@
         @media (min-width:412px){
         .container{
             width:412px;
-            height:350vh;
+            height:330vh;
             background-image:linear-gradient(pink,#ffffff);
         }
         *{
@@ -79,7 +79,7 @@
         }
         #lastimg{
             position: relative;
-           top:280px;
+           top:175px;
             left:110px;
         }
         #headline{
@@ -113,33 +113,52 @@
             position: relative;
             left:6px;
             transition: all 1s ease-in-out;
-            background-image:url("study2.avif");
+             background-color:#278645;
             height:300px;
             opacity: 0.6;
             width:399px;
         }
        .form-aspect{
         font-size: 15px;
-        font-weight: 400;
-        color:black;
+        font-weight: 900;
+        color:rgb(255, 255, 255);
         border: 0;
         outline: 0;
+        width:370px;
+        background-color: #3fad62;
+        border-bottom: 1px solid #fff;
+        height:22px;
        
        }
-       #form-font1{
-        height:22px;
+       .btn{
+        color:rgb(0, 0, 0);
+        background-color: rgb(255, 217, 0);
+        width:370px;
+        font-size:17px;
+        font-weight:900;
+        cursor:pointer;
+
        }
-       #form-font2{
-        height:22px;
+       .btn:active{
+        width:350px;
+        font-size:15px;
+        box-shadow:0 0 40px rgb(173, 16, 204),
+        0 0 80px red;
+       }
+       .sideimg{
+        width:150px;
+        height:150px;
+        position: relative;
+        top:110px;
+        left:10px;
        }
     }
-        
     </style>
 </head>
 <body>
+
     <div class="container">  
         <input type="checkbox" id="check">
-       
         <div class="menu">
             <a href=""><label class="label">Home</label></a>
             <br>
@@ -151,7 +170,7 @@
             <br>
             <br>
             <br>
-            <a href=""><label class="label">About</label></a>
+            <a href=""><label class="label">Form</label></a>
             <br>
             <br>
             <br>
@@ -161,6 +180,7 @@
             <br>
             <br>
             <a href="https://youtube.com/@chintamaniacademy"><img src="youtube.png" width="40" height="40" id="lastimg"></a>
+          
             
         </div>
             <label for="check" onclick="Run()"><img src="menu.svg" height="80" width="50" class="img"> </label>
@@ -191,17 +211,21 @@
             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
             encrypted-media; gyroscope; picture-in-picture; web-share"allowfullscreen class="iframe"></iframe>
             <img src="study1.avif" class="footer-img">
-            <form name="f1" class="form">
+            <form name="f1" class="form"  onsubmit="emailSend(); reset(); return false;" >
                 <center>
                     <br>
                     <br>
-                <input type="text" name="t1" placeholder="Name" class="form-aspect" id="form-font1">
+                <input type="text" name="name" placeholder="Name" class="form-aspect" id="name">
                 <br>
                 <br>
-                <input type="tel" name="tell1" required placeholder="Phone No." class="form-aspect" id="form-font2">
+                <input type="text" name="phone"  id="phone" placeholder="Phone No." class="form-aspect">
                 <br>
                 <br>
-                <textarea cols="23" rows="5" name="textarea" placeholder="Comments" class="form-aspect"></textarea>
+               <input type="email" id="email" name="email"  class="form-aspect" placeholder="Email">
+               <br>
+               <br>
+               <br>
+               <button class="btn" type="submit">Submit</button>
                 </center>
             </form>
       
@@ -209,6 +233,7 @@
     <audio id="sound1">
         <source src="click-21156.mp3">
     </audio>
+
     <script>
         //Here i am write js for click sound as a first i am give 
         //<audio id="null">
@@ -216,9 +241,17 @@
         //<audio>
         //<button onclick="run()">ok</button>
         let btnsound=document.getElementById("sound1")
+
         function Run(){
             btnsound.play()
         }
+        //here we used js to connect the form
+        
+    </script>
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="contact form.js">
     </script>
 </body>
 </html>
