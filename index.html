@@ -8,7 +8,7 @@
         @media (min-width:412px){
         .container{
             width:412px;
-            height:300vh;
+            height:350vh;
             background-image:linear-gradient(pink,#ffffff);
         }
         *{
@@ -113,8 +113,25 @@
             position: relative;
             left:6px;
             transition: all 1s ease-in-out;
+            background-image:url("study2.avif");
+            height:300px;
+            opacity: 0.6;
+            width:399px;
         }
-        
+       .form-aspect{
+        font-size: 15px;
+        font-weight: 400;
+        color:black;
+        border: 0;
+        outline: 0;
+       
+       }
+       #form-font1{
+        height:22px;
+       }
+       #form-font2{
+        height:22px;
+       }
     }
         
     </style>
@@ -128,22 +145,17 @@
             <br>
             <br>
             <br>
-            
             <a href="https://youtube.com/@chintamaniacademy"><label class="label">Youtube</label></a>
             <br>
             <br>
-            
-            <br>
-            <a href=""><label class="label">About</label></a>
-            <br>
-            
-            <br>
             <br>
             <a href=""><label class="label">About</label></a>
             <br>
             <br>
-            
-            
+            <br>
+            <a href=""><label class="label">About</label></a>
+            <br>
+            <br>
             <a href="https://youtube.com/@chintamaniacademy"><img src="youtube.png" width="40" height="40" id="lastimg"></a>
             
         </div>
@@ -176,12 +188,17 @@
             encrypted-media; gyroscope; picture-in-picture; web-share"allowfullscreen class="iframe"></iframe>
             <img src="study1.avif" class="footer-img">
             <form name="f1" class="form">
-                <input type="text" name="t1">
+                <center>
+                    <br>
+                    <br>
+                <input type="text" name="t1" placeholder="Name" class="form-aspect" id="form-font1">
                 <br>
                 <br>
-                <input type="tel" name="tell1" required>
+                <input type="tel" name="tell1" required placeholder="Phone No." class="form-aspect" id="form-font2">
                 <br>
                 <br>
+                <textarea cols="20" rows="5" name="textarea" placeholder="Comments" class="form-aspect"></textarea>
+                </center>
             </form>
       
     </div>
