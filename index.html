@@ -8,7 +8,7 @@
         @media (min-width:412px){
         .container{
             width:412px;
-            height:270vh;
+            height:300vh;
             background-image:linear-gradient(pink,#ffffff);
         }
         *{
@@ -106,6 +106,14 @@
         #check:checked ~.footer-img{
             display: none;
         }
+        #check:checked ~.form{
+            display: none;
+        }
+        .form{
+            position: relative;
+            left:6px;
+            transition: all 1s ease-in-out;
+        }
         
     }
         
@@ -166,12 +174,16 @@
             <iframe width="400" height="315" src="https://www.youtube.com/embed/fqASegYkdpc" 
             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
             encrypted-media; gyroscope; picture-in-picture; web-share"allowfullscreen class="iframe"></iframe>
-            
-
             <img src="study1.avif" class="footer-img">
-
-          
-           
+            <form name="f1" class="form">
+                <input type="text" name="t1">
+                <br>
+                <br>
+                <input type="tel" name="tell1" required>
+                <br>
+                <br>
+            </form>
+      
     </div>
     <audio id="sound1">
         <source src="click-21156.mp3">
@@ -186,7 +198,6 @@
         function Run(){
             btnsound.play()
         }
-
     </script>
 </body>
 </html>
