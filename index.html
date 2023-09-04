@@ -75,7 +75,7 @@
         .lab1{
            position:absolute;
            top: 10px;
-           margin-top: 20px;
+           margin-top: 25px;
         }
         #lastimg{
             position: relative;
@@ -95,6 +95,14 @@
             left:6px;
             transition: all 1s ease-in-out;
         }
+
+        .footer-img{
+            position: relative;
+            left:6px;
+            transition: all 1s ease-in-out;
+            width:399px;
+
+        }
         
     }
         
@@ -105,30 +113,30 @@
         <input type="checkbox" id="check">
        
         <div class="menu">
-            <a href="https://rio7896.github.io/Team_Rio.github.io/"><label class="label">Home</label></a>
+            <a href=""><label class="label">Home</label></a>
             <br>
             <br>
             <br>
-            <br> 
+            
             <a href="https://youtube.com/@chintamaniacademy"><label class="label">Youtube</label></a>
             <br>
             <br>
+            
+            <br>
+            <a href=""><label class="label">About</label></a>
+            <br>
+            
             <br>
             <br>
             <a href=""><label class="label">About</label></a>
             <br>
             <br>
-            <br>
-            <br>
-            <a href=""><label class="label">About</label></a>
-            <br>
-            <br>
-            <br>
+            
             
             <a href="https://youtube.com/@chintamaniacademy"><img src="youtube.png" width="40" height="40" id="lastimg"></a>
             
         </div>
-            <label for="check"><img src="menu.svg" height="80" width="50" class="img"> </label>
+            <label for="check" onclick="Run()"><img src="menu.svg" height="80" width="50" class="img"> </label>
             <b id="headline">CHINTAMANI</b>
              
             <iframe width="400" height="315" src="https://www.youtube.com/embed/xzKFL5IO9eE" 
@@ -155,11 +163,26 @@
             <iframe width="400" height="315" src="https://www.youtube.com/embed/fqASegYkdpc" 
             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
             encrypted-media; gyroscope; picture-in-picture; web-share"allowfullscreen class="iframe"></iframe>
+            
+
+            <img src="study1.avif" class="footer-img">
 
           
            
     </div>
+    <audio id="sound1">
+        <source src="click-21156.mp3">
+    </audio>
     <script>
+        //Here i am write js for click sound as a first i am give 
+        //<audio id="null">
+        //<source src="ex.mp3">
+        //<audio>
+        //<button onclick="run()">ok</button>
+        let btnsound=document.getElementById("sound1")
+        function Run(){
+            btnsound.play()
+        }
 
     </script>
 </body>
