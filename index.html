@@ -152,6 +152,26 @@
         top:110px;
         left:10px;
        }
+       #phone::placeholder{
+        color:rgb(255, 255, 255);
+        padding-left: 10px;
+       }
+       #name::placeholder{
+        color:#fff;
+        padding-left: 10px;
+       }
+       #email::placeholder{
+        color:#fff;
+        padding-left: 10px;
+       }
+       #dropdown{
+        width:200px;
+        padding-left: 50px;
+        height:25px;
+       }
+       #dropdown:{
+        color:red;
+       }
     }
     </style>
 </head>
@@ -215,14 +235,23 @@
                 <center>
                     <br>
                     <br>
-                <input type="text" name="name" placeholder="Name" class="form-aspect" id="name">
+                <input type="text" name="name"  placeholder="Name" class="form-aspect" id="name">
                 <br>
                 <br>
-                <input type="text" name="phone"  id="phone" placeholder="Phone No." class="form-aspect">
+                <input type="text" name="phone"    id="phone" placeholder="Phone No." class="form-aspect">
                 <br>
                 <br>
-               <input type="email" id="email" name="email"  class="form-aspect" placeholder="Email">
+               <input type="email" id="email"  name="email"  class="form-aspect" placeholder="Email">
                <br>
+               <br>
+               <br>
+               <select id="dropdown">
+                <option>11th</option>
+                <option>12th</option>
+                <option>10</option>
+                <option>9</option>
+                <option>8</option>
+               </select>
                <br>
                <br>
                <button class="btn" type="submit">Submit</button>
